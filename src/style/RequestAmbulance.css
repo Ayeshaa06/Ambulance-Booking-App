@@ -74,15 +74,23 @@ body {
     background-color: #120202;
     color: #fff;
 }
-
 .image-container {
-    max-width: 500px;
+   /* Adjust this if you want the container to take up more space */
+    width: 50%; /* Ensures the container scales responsively */
 }
 
-.image-container img {
+.image-container iframe {
+    width: 100%; /* Makes the iframe span the full width of its container */
+    height: 400px; /* Set a specific height for the iframe */
+    border-radius: 10px; /* Keeps the rounded corners */
+    border: none; /* Removes any border around the iframe (optional) */
+}
+
+
+/* .image-container img {
     width: 100%;
     border-radius: 10px;
-}
+} */
 
 @media (max-width: 768px) {
     .container {
